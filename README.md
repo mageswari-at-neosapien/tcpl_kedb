@@ -4,9 +4,7 @@ Root cause analyses are maintained as Markdown files with YAML front matter so p
 
 ## RCA index
 
-| Ticket | Product | Subject |
-| --- | --- | --- |
-| 636229 | Neosapien Mobile App | [Reported visibility of non-sales conversations](rcas/636229-non-sales-conversation-visibility.md) |
+See [RCA_INDEX.md](RCA_INDEX.md) for ticket IDs, incident dates, issues faced, actions taken, and links to the detailed RCA files.
 
 ## File conventions
 
@@ -16,7 +14,8 @@ Root cause analyses are maintained as Markdown files with YAML front matter so p
 - Quote identifiers, dates, times, and version strings. Use `YYYY-MM-DD` dates and `HH:MM` times. Use `null` for unknown metadata, and do not infer a timezone.
 - Preserve the source document's creation and review dates. Record Markdown conversion and update dates separately in `markdown_created_date` and `markdown_updated_date`.
 - Keep the front matter and body consistent when updating a record. Preserve reported-versus-confirmed distinctions, unknown values, action owners, and individual action statuses.
-- Add new records to the index and use Git history to track subsequent changes.
+- Keep `RCA_INDEX.md` synchronized whenever a detailed RCA is added, updated, renamed, or removed. Commit related index and RCA changes together and use Git history to track revisions.
+- Follow [AGENTS.md](AGENTS.md) for the required agent workflow and index checks.
 
 ## Source provenance
 
